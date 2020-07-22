@@ -1,4 +1,5 @@
-@charset "UTF-8";
+@import "./utils/variables";
+
 :root {
   --primary-text-color: #757575;
   --accent-text-color: rgba(255, 255, 255, 0.6);
@@ -48,6 +49,7 @@ section {
 
 .container {
   /* outline: 1px solid red; */
+
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -56,6 +58,7 @@ section {
 }
 
 /* Лого */
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -63,28 +66,20 @@ section {
   line-height: 1.19;
   color: #000000;
 }
-
 .web {
   color: var(--accent-color);
 }
 
 /* Список навигационных ссылок в хедере */
+
 .container.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .site-nav.list {
@@ -113,8 +108,10 @@ section {
   bottom: 0;
   display: block;
   content: "";
+
   width: 100%;
   height: 4px;
+
   background: #2196f3;
   border-radius: 2px;
 }
@@ -125,8 +122,6 @@ section {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -143,24 +138,16 @@ section {
 }
 
 .contacts-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .contacts-link {
   /* display: block;
   padding-bottom: 32px;
   padding-top: 32px; */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -177,6 +164,7 @@ section {
 }
 
 /* Герой */
+
 .hero {
   max-width: 1600px;
   height: 600px;
@@ -185,8 +173,12 @@ section {
   text-align: center;
   padding-top: 200px;
   background-color: black;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -199,6 +191,7 @@ section {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -211,26 +204,22 @@ section {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   cursor: pointer;
 }
 
 /* Преимущества */
+
 .container-svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -239,8 +228,6 @@ section {
 }
 
 .advantages.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -263,6 +250,7 @@ section {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
+
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -273,9 +261,8 @@ section {
 }
 
 /* Чем мы занимаемся */
+
 .projects.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -289,6 +276,7 @@ section {
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+
   margin-top: 0px;
   margin-bottom: 50px;
 }
@@ -305,10 +293,10 @@ section {
   position: absolute;
   bottom: 0px;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   /* Правильно ли задавать шырину заголовку если при позиционировании слова стают в две строки? */
   width: 220px;
+
   margin-bottom: 27px;
   font-weight: 700;
   font-size: 14px;
@@ -322,6 +310,7 @@ section {
   position: absolute;
   bottom: 0;
   content: "";
+
   height: 70px;
   width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
@@ -332,13 +321,12 @@ section {
 }
 
 /* Наша команда */
+
 .our-team {
   background-color: #f5f4fa;
 }
 
 .team.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -348,15 +336,13 @@ section {
 
 .team > .item {
   background-color: var(--primary-white-color);
-  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
 
 .list-social-links {
   padding: 0 32px 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -372,15 +358,9 @@ section {
 }
 
 .social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   line-height: 0px;
@@ -393,6 +373,7 @@ section {
   line-height: 1.19;
   text-align: center;
   color: var(--title-text-color);
+
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -401,6 +382,7 @@ section {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
   margin-top: 0px;
   margin-bottom: 16px;
 }
@@ -411,28 +393,19 @@ section {
 }
 
 /* Постоянные клиенты */
+
 .regular-clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .item-clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .client {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -448,6 +421,7 @@ section {
 }
 
 /* Футер */
+
 footer {
   background-color: var(--bg-footer-color);
   max-width: 1600px;
@@ -459,9 +433,8 @@ footer {
 }
 
 .container.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+
   padding-bottom: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -477,8 +450,6 @@ footer {
 }
 
 .social-netwroks.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -504,6 +475,7 @@ footer {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
   color: var(--primary-white-color);
 }
 
@@ -513,21 +485,13 @@ footer {
 
 .list-social-links-footer {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .social-links-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   fill: var(--primary-white-color);
@@ -541,30 +505,26 @@ footer {
 }
 
 /* Форма E-mail  */
+
 .form-subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 12px;
   margin-left: 94px;
 }
 
 .container-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .container-field > b {
   margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
   color: #ffffff;
 }
 
@@ -572,8 +532,7 @@ footer {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: transparent;
 }
@@ -581,6 +540,7 @@ footer {
 .container-field > input[placeholder] {
   font-size: 16px;
   line-height: 1.87;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -592,19 +552,16 @@ footer {
   height: 50px;
   border: none;
   border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   /* text-align: center; */
   font-size: 16px;
   line-height: 1.87;
+
   letter-spacing: 0.06em;
+
   color: #ffffff;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--accent-color);
   cursor: pointer;
 }
@@ -614,12 +571,14 @@ footer {
   line-height: 2;
   text-align: center;
   color: rgba(255, 255, 255, 0.4);
+
   margin-top: 18px;
   margin-bottom: 0;
 }
 
 /* СТРАНИЦА ПОРТФОЛИО */
 /* Кнопки */
+
 .invisible-title {
   position: absolute;
   width: 1px;
@@ -632,12 +591,8 @@ footer {
 }
 
 .container.btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .btn-filter:not(:last-child) {
@@ -648,6 +603,7 @@ footer {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -660,8 +616,8 @@ footer {
 .btn-filter:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .container.btn {
@@ -669,31 +625,27 @@ footer {
 }
 
 /* Список примеров работ */
+
 .portfolio-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .portfolio-item {
   position: relative;
+
   border: 1px solid #eeeeee;
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
-  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-item:hover .portfolio-description {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 .portfolio-list .portfolio-item {
@@ -720,25 +672,26 @@ footer {
 .portfolio-description {
   position: absolute;
   top: 100%;
+
   width: 100%;
   height: 100%;
   margin-top: 0;
   margin-bottom: 0;
   padding: 63px 24px;
+
   font-size: 18px;
   line-height: 1.56;
   color: var(--primary-white-color);
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-title {
   margin-top: 20px;
   margin-bottom: 4px;
   margin-left: 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -750,29 +703,24 @@ footer {
   margin-top: 0;
   margin-bottom: 20px;
   margin-left: 24px;
+
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
 }
 
 /* Модальное окно */
+
 .backdrop {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -782,8 +730,8 @@ footer {
   height: 581px;
   padding: 40px;
   background: #ffffff;
-  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -801,6 +749,7 @@ footer {
   width: 448px;
   height: 40px;
   padding-left: 42px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -811,6 +760,7 @@ footer {
   height: 120px;
   padding: 12px 16px;
   resize: none;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -831,12 +781,8 @@ footer {
 }
 
 .label-agreement {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -844,12 +790,9 @@ footer {
   position: absolute;
   top: 50%;
   left: 42px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: #757575;
@@ -858,8 +801,7 @@ footer {
 .container-textarea > .label-position {
   top: 12px;
   left: 16px;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .container-textarea {
@@ -870,17 +812,12 @@ footer {
   position: absolute;
   top: 50%;
   left: 16px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .container-agreement {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .label-agreement {
@@ -890,8 +827,7 @@ footer {
 
 .container-agreement a {
   margin-left: 3px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: var(--accent-color);
 }
 
@@ -899,8 +835,8 @@ footer {
   width: 200px;
   height: 50px;
   margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
+
   border: none;
   font-weight: 700;
   font-size: 16px;
@@ -909,8 +845,7 @@ footer {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background: var(--accent-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -919,38 +854,29 @@ footer {
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transform: translate(9px, -9px);
-          transform: translate(9px, -9px);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translate(9px, -9px);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: none;
   background: var(--primary-white-color);
-  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
 .field-modal:focus + .label-position,
 .field-modal:not(:placeholder-shown) + .label-position {
-  -webkit-transform: translate(-26px, -40px);
-          transform: translate(-26px, -40px);
+  transform: translate(-26px, -40px);
   color: var(--accent-color);
 }
 
 .field-comment:focus + .label-position,
 .field-comment:not(:placeholder-shown) + .label-position {
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+  transform: translateY(-30px);
   color: var(--accent-color);
 }
 
@@ -1007,4 +933,3 @@ footer {
   opacity: 0;
   pointer-events: none;
 }
-/*# sourceMappingURL=main.css.map */
