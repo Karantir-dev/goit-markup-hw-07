@@ -1,0 +1,39 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages.list {
+  display: flex;
+}
+
+.advantages .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.container-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.advantages-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.advantages-p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
