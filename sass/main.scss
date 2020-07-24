@@ -8,66 +8,6 @@
 @import "./components/hero";
 @import "./components/advantages";
 
-/* Чем мы занимаемся */
-
-.projects.list {
-  display: flex;
-}
-
-.projects .projects-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: $title-text-color;
-
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
-
-.projects-img {
-  display: block;
-}
-
-.projects-item {
-  position: relative;
-}
-
-.projects-title {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%);
-  /* Правильно ли задавать шырину заголовку если при позиционировании слова стают в две строки? */
-  width: 220px;
-
-  margin-bottom: 27px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  text-transform: uppercase;
-  color: $primary-white-color;
-}
-
-.projects-item::before {
-  position: absolute;
-  bottom: 0;
-  content: "";
-
-  height: 70px;
-  width: 100%;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
-.section.projects {
-  padding-top: 0;
-}
-
 /* Наша команда */
 
 .our-team {

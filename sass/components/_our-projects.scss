@@ -1,0 +1,54 @@
+.section.projects {
+  padding-top: 0;
+}
+
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.projects.list {
+  display: flex;
+}
+
+.projects-item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
+
+.projects-img {
+  display: block;
+}
+
+.projects-title {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  /* Правильно ли задавать шырину заголовку если при позиционировании слова стают в две строки? */
+  width: 220px;
+  margin-bottom: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
