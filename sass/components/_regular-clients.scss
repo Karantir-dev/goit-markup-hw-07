@@ -1,0 +1,25 @@
+.regular-clients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-item {
+  display: flex;
+}
+
+.client {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $company-clients-color;
+  border-radius: 4px;
+  fill: $company-clients-color;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    fill: $accent-color;
+  }
+}

@@ -1,13 +1,8 @@
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.advantages.list {
+.advantages-list {
   display: flex;
 }
 
-.advantages .item:not(:last-child) {
+.advantages-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -18,7 +13,7 @@
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background: #f5f4fa;
+  background: $secondary-color;
   border-radius: 4px;
 }
 
